@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap');
+
+:root {
+  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,3 +38,4 @@ body {
   line-height: 1.5;
   color: #333;
 }
+
