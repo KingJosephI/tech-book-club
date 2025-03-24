@@ -59,10 +59,8 @@ h1, h2, h3 {
 
 .button {
   padding: 20px 24px;
-  /* padding: 14px 18px; */
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   gap: 16px;
   border: 2px solid var(--neutral-900);
   border-radius: 8px;
@@ -71,8 +69,6 @@ h1, h2, h3 {
   font-weight: 600;
   font-family: 'Martian Mono', monospace;
   color: var(--neutral-900);
-  /* background-color: var(--neutral-100); */
-  /* justify-self: start; */
 }
 
 .button:hover {
@@ -139,7 +135,7 @@ main {
     display: flex;
     align-items: center;
     gap: 12px;
-    /* background-color: teal; */
+ 
   }
 
   .hero__stats-image {
@@ -154,7 +150,6 @@ main {
   }
 
   .hero__stats-text {
-    /* background-color: teal; */
     display: flex;
     flex-direction: column;
     gap: 4px;
