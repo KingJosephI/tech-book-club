@@ -182,17 +182,62 @@ main {
   border-radius: 8px;
 }
 
+.comment {
+
+  margin-bottom: 64px;
+
+  img {
+    width: 28px;
+  }
+
+
+  .comment__text {
+    font-family: 'Martian Mono', monospace;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -1px;
+    color: var(--neutral-900);
+    padding-block: 32px;
+  }
+
+  .comment__author {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: var(--neutral-700);
+  
+  }
+
+  @media (min-width: 768px) {
+    .comment__text {
+      font-size: 34px;
+      line-height: 130%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+
+    text-align: center;
+    .comment__text {
+      letter-spacing: -2%;
+    }
+
+    .comment__author {
+      letter-spacing: -2%;
+    }
+  }
+}
 
 .footer {
   background-color: var(--neutral-900);
   color: var(--neutral-100);
-  /* padding: 48px 16px 0 16px; */
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 
   .footer__container {
     padding: 48px 16px 64px 16px;
@@ -204,7 +249,6 @@ main {
   }
 
   hr {
-    /* justify-self: stretch;*/
     align-self: stretch; 
     margin-inline: 16px;
   }
@@ -218,20 +262,10 @@ main {
     padding-bottom: 40px;
   }
 
-  .footer__content {
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-  }
 
   .footer__button {
     border: 2px solid var(--neutral-100);
     color: var(--neutral-100);
-    /* text-align: center; */
-    /* width: 100%; */
-    /* align-self: center; */
     justify-self: center;
   }
 
@@ -243,7 +277,6 @@ main {
 
   .stats {
      padding-top: 24px;
-    /*padding-bottom: 64px; */
   }
 
   .footer__links {
@@ -255,12 +288,9 @@ main {
     font-family: 'Martian Mono', serif;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
     gap: 16px;
-    /* border-top: 1px solid var(--neutral-100); */
     width: 100%;
-    /* margin-inline: 16px; */
+    
   }
 
   .footer__social-media > *:hover {
@@ -270,15 +300,13 @@ main {
 
   @media screen and (min-width: 768px) {
 
-    /* padding: 64px 32px; */
-
-    br {
+     br {
       display: none;
     }
 
     hr {
       margin-inline: 0;
-      /* color: #FEA36F; */background-color: var(--neutral-100);
+      background-color: var(--neutral-100);
     }
 
     .footer__container {
@@ -295,7 +323,6 @@ main {
     .footer__links{
       flex-direction: row;
       justify-content: space-between;
-      /* padding: 24px 64px; */
     }
   }
 
