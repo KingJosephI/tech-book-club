@@ -232,6 +232,10 @@ main {
     }
   }
 
+  .read-together__content {
+    padding-bottom: 40px;
+  }
+
   .read-together__title {
     padding-bottom: 24px;
 
