@@ -46,7 +46,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  color: var(--neutral-700);
   background-color: var(--neutral-100);
   background-image: url('./assets/images/pattern-light-bg.svg');
   background-repeat: no-repeat ;
@@ -55,9 +55,20 @@ body {
 
 h1, h2, h3 {
   font-family: "Martian Mono", monospace;
+  color: var(--neutral-900);
+}
+
+p {
+  color: var(--neutral-700);
 }
 
 h2 {
+
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: -2px;
+  font-weight: 600;
+
   @media (min-width: 768px) {
     font-size: 50px;
     line-height: 120%;
@@ -187,8 +198,112 @@ main {
   gap: 4px;
 }
 
-.hero__image {
+.hero__image, img {
   border-radius: 8px;
+}
+
+.read-together {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 80px;
+
+    .read-together__content {
+      order: 2;
+    }
+
+    .read-together__title {
+      letter-spacing: -2px;
+    }
+  }
+
+  .read-together__title {
+    padding-bottom: 24px;
+
+    @media (min-width: 1024px) {
+      /* text-wrap: wrap; */
+      width: 100%;
+    }
+  }
+
+  .read-together__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   
+    li {
+      display: flex;
+    }
+    
+    li::before {
+      content: url('/assets/images/icon-check.svg');
+      margin-right: 16px;
+      line-height: 100%;
+    }
+  }
+
+
+}
+
+.not-average {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  
+
+  .not-average__title {
+    position: relative;
+    padding-bottom: 24px;
+
+    img {
+      position: absolute;
+      /* right: 42%; */
+      left: 0;
+      bottom: 15%;
+      width: 34%;
+    }
+
+    @media (min-width: 768px) {
+      img {
+        width: 20%;
+      }
+    }
+    @media (min-width: 1024px) {
+      img {
+        left: 27%;
+        width: 30%;
+      }
+    }
+  }
+
+  .logos {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      bottom: 8%;
+      right: 5%;
+
+    }
+
+    @media (min-width: 1024px) {
+      /* display: block; */
+      right: 38%;
+
+    }
+  }
+
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+  
 }
 
 .membership {
@@ -303,9 +418,6 @@ main {
     }
   }
 
-  .membership__plan--pro {
-    
-  }
 }
 
 .comment {
@@ -386,6 +498,7 @@ main {
     font-weight: 600;
     text-align: center;
     padding-bottom: 40px;
+    color: var(--neutral-100);
   }
 
 
