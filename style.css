@@ -42,6 +42,11 @@ input {
   border: none;
 }
 
+.header, .hero {
+
+  /* background-color: var(--neutral-100); */
+  /* z-index: 0; */
+}
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -106,6 +111,14 @@ h2 {
   @media (min-width: 1024px) {
     padding-inline: 131px;
   }
+}
+
+section:not(.hero) {
+  
+  /* background-color: var(--neutral-0); */
+  /* width: 100vw; */
+  /* background: red; */
+
 }
 
 main {
@@ -304,6 +317,33 @@ main {
     gap: 80px;
   }
   
+}
+
+.how-it-works {
+  background-image: url('./assets/images/pattern-light-bg.svg');
+  background-repeat: no-repeat;
+  /* background-color: teal; */
+  border-radius: 12px;
+  padding: 64px 16px;
+
+  li {
+    /* display: block; */
+    list-style: none;
+    font-weight: 600;
+    font-family: 'Martian Mono', monospace;
+    color: var(--neutral-900);
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -1px;
+  }
+
+  li::before {
+    /* content: url('./assets/images/icon-check.svg');
+    margin-right: 16px;*/
+    /* line-height: 100%;  */
+    /* display: block; */
+    
+  }
 }
 
 .membership {
