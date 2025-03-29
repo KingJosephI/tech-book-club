@@ -318,8 +318,12 @@ main {
 }
 
  .how-it-works {
-  background-color: var(--neutral-100);
-  background-image: url('./assets/images/pattern-light-bg.svg');
+  /* background-color: var(--neutral-100); */
+  /* background-image: url('./assets/images/pattern-light-bg.svg'); */
+  background: 
+        url('./assets/images/pattern-light-bg.svg'),
+        linear-gradient(to bottom right, var(--neutral-100) 68%, #9CC9DA)
+        ;
   background-repeat: no-repeat;
   border-radius: 12px;
   padding: 64px 16px;
@@ -506,6 +510,9 @@ main {
     }
   }
 
+  .membership__plan--pro {
+    background: linear-gradient(to bottom, var(--neutral-100) 50%, #9CC9DA 180%);     
+  }
 
 
 }
