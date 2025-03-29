@@ -42,17 +42,11 @@ input {
   border: none;
 }
 
-.header, .hero {
-
-  /* background-color: var(--neutral-100); */
-  /* z-index: 0; */
-}
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--neutral-700);
-  /* background-color: var(--neutral-100); */
   background-image: url('./assets/images/pattern-light-bg.svg');
   background-repeat: no-repeat ;
   background-position: top;
@@ -132,7 +126,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 64px;
-  
+
+  /* a {
+  text-decoration: none;
+  color: var(--neutral-100);
+  }
+   */
   @media (min-width: 768px) {
     .hero__title {
       font-size: 62px;
@@ -177,6 +176,10 @@ main {
 
 .hero__review-button {
   margin-bottom: 20px;
+      a {
+      text-decoration: none;
+      color: var(--neutral-900);
+    }
 }
 
 .stats {
@@ -512,6 +515,10 @@ main {
 
   .membership__plan--pro {
     background: linear-gradient(to bottom, var(--neutral-100) 50%, #9CC9DA 180%);     
+    
+    @media (min-width:1024px) {
+      transform: scale(1.05);
+    }
   }
 
 
@@ -603,6 +610,11 @@ main {
     border: 2px solid var(--neutral-100);
     color: var(--neutral-100);
     justify-self: center;
+
+    a {
+      text-decoration: none;
+      color: var(--neutral-100);
+    }
   }
 
   .footer__button:hover {
