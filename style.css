@@ -515,6 +515,10 @@ main {
 
   .membership__plan--pro {
     background: linear-gradient(to bottom, var(--neutral-100) 50%, #9CC9DA 180%);     
+    
+    @media (min-width:1024px) {
+      transform: scale(1.05);
+    }
   }
 
 
